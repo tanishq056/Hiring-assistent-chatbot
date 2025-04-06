@@ -1,14 +1,16 @@
-# 🧠 TalentScout Hiring Assistant
+# Hiring Assistent Chatbot
+
 
 ## 📌 Project Overview
 
-**TalentScout Hiring Assistant** is an intelligent Streamlit-based chatbot that automates and enhances the candidate screening process. By leveraging **LLMs (LLaMA 3 70B via Groq)** and resume parsing tools, it gathers structured candidate data, assesses technical competencies, and generates an evaluation report — all within an interactive, dynamic UI. The assistant adapts its questioning style based on user inputs and confidence levels, offering a highly personalized and scalable interview experience.
+**Hiring Assistent Chatbot** is an intelligent Streamlit-based chatbot that automates and enhances the candidate screening process. By leveraging **LLMs (LLaMA 3 70B via Groq)** and resume parsing tools, it gathers structured candidate data, assesses technical competencies, and generates an evaluation report — all within an interactive, dynamic UI. The assistant adapts its questioning style based on user inputs and confidence levels, offering a highly personalized and scalable interview experience.
 
 ---
 
 ## ⚙️ Installation Instructions
 
 ### 1. Clone the Repository
+
 
 ```bash
 git clone https://github.com/yourusername/talent-scout-assistant.git
@@ -25,25 +27,31 @@ venv\Scripts\activate        # Windows
 
 ### 3. Install Dependencies
 
+
 ```bash
 pip install -r requirements.txt
 ```
+
 
 ### 4. Set up Secrets
 
 Create a `.streamlit/secrets.toml` file to securely store your API key:
 
+
 ```toml
 GROQ_API_KEY = "your_groq_api_key_here"
 ```
 
+
 ### 5. Run the Application
+
 
 ```bash
 streamlit run app.py
 ```
 
 ---
+
 
 ## 🧑‍💻 Usage Guide
 
@@ -58,6 +66,7 @@ streamlit run app.py
 5. **Report Generation**: Download a complete evaluation report.
 
 ---
+
 
 ## 🔍 Technical Details
 
@@ -77,10 +86,12 @@ streamlit run app.py
 
 ### 🧱 Architecture
 
+
 ```
 User → Streamlit Frontend → Resume Parser → Persona Selection → LLM Q&A Loop
      → Evaluation Logic → LangChain → Groq API → Response → Report Generator
 ```
+
 
 ---
 
@@ -118,28 +129,16 @@ Follow-up questions are triggered when confidence is below a threshold:
 
 ## 🚧 Challenges & Solutions
 
-### ✅ Challenge: Inconsistent Resume Formats  
+### Challenge: Inconsistent Resume Formats  
 **Solution**: Used a hybrid parser for `.pdf` and `.docx`, followed by regex-based key phrase matching.
 
-### ✅ Challenge: Dynamic Technical Evaluation  
+### Challenge: Dynamic Technical Evaluation  
 **Solution**: Created a confidence-based loop to guide the LLM on when to ask deeper questions or move on.
 
-### ✅ Challenge: Persona-Based Conversations  
+### Challenge: Persona-Based Conversations  
 **Solution**: Designed multiple personas with prompt templates and injected their traits into the system message using LangChain’s chat memory.
 
-### ✅ Challenge: Speed & Token Limits  
+### Challenge: Speed & Token Limits  
 **Solution**: Chose Groq for ultra-fast LLaMA inference and used chunked context to avoid exceeding token limits.
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License. Feel free to use, modify, and contribute!
-
----
-
-## 🙋‍♂️ Author
-
-Built by [Your Name]  
-📧 your.email@example.com  
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile)
