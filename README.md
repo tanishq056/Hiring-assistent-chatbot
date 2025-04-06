@@ -13,8 +13,8 @@
 
 
 ```bash
-git clone https://github.com/yourusername/talent-scout-assistant.git
-cd talent-scout-assistant
+git clone https://github.com/tanishq056/Hiring-assistent-chatbot
+cd Hiring-assistent-chatbot
 ```
 
 ### 2. Create a Virtual Environment (Recommended)
