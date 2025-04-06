@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TalentScout Hiring Assistant Documentation
 
 ## Overview
@@ -288,3 +289,6 @@ project/
 5. **User Account Creation**  
     Let candidates log in and track their progress or history over time.
 
+=======
+# Hiring-assistent-chatbot
+>>>>>>> cf97eb23da73fbabb3f7b7087a2183bc6a640a6c
