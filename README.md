@@ -1,5 +1,6 @@
 # Hiring Assistent Chatbot
 
+Deployed Link :- https://huggingface.co/spaces/tanishq04/Hiring-Assistent-Chatbot
 
 ## 📌 Project Overview
 
